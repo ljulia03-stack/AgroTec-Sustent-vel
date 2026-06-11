@@ -1,6 +1,5 @@
 # AgroTec-Sustentável
 Projeto Agrinho 2026 - Agro forte, futuro sustentável.
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
