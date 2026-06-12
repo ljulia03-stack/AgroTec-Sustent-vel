@@ -1,4 +1,4 @@
-# 🌱 AgroTec Sustentável - Ultra Master Agrinho 2026
+# 🌱 AgroTec Sustentável 
 
 Projeto desenvolvido para o Concurso Agrinho 2026 com o tema:
 
