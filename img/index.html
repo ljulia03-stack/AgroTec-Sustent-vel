@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTec Sustentável - Concurso Agrinho 2026</title>
+    <title>AgroTec Sustentável - Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
     <div class="header-container">
-        <img src="img/logo-agrotec.png" alt="Logo AgroTec" class="logo">
+
+        <!-- LOGO ONLINE -->
+        <img src="https://cdn-icons-png.flaticon.com/512/2909/2909768.png" 
+             alt="Logo AgroTec" 
+             class="logo">
+
         <h1>AgroTec Sustentável</h1>
         <p>Agro forte, futuro sustentável</p>
     </div>
@@ -23,63 +29,96 @@
     <a href="#simulador">Simulador</a>
 </nav>
 
-<section class="banner">
-    <img src="img/banner.png" alt="Banner AgroTec" class="banner-img">
+<!-- BANNER ONLINE -->
+<section>
+    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80"
+         alt="Agricultura sustentável"
+         class="banner-img">
 </section>
 
 <main class="container">
+
+    <!-- SOBRE -->
     <section id="sobre">
         <h2>Sobre o Projeto</h2>
-        <p>O <strong>AgroTec Sustentável</strong> é um projeto desenvolvido para o Concurso Agrinho 2026. Nosso objetivo é aplicar tecnologia acessível na agricultura e pecuária familiares, utilizando Arduino, sensores e automação para reduzir desperdício e aumentar produtividade, de forma sustentável.</p>
+        <p>
+            O AgroTec Sustentável é um projeto criado para o Concurso Agrinho 2026,
+            que busca unir tecnologia e campo por meio de automação acessível,
+            promovendo sustentabilidade e redução de desperdícios na produção rural.
+        </p>
     </section>
 
+    <!-- MAQUETE -->
     <section id="maquete">
         <h2>Maquete do Projeto</h2>
-        <p>A maquete apresenta uma propriedade rural inteligente, com energia solar, irrigação automatizada e manejo eficiente de animais.</p>
+        <p>
+            Representa uma propriedade rural inteligente com irrigação automatizada,
+            energia solar e gestão eficiente de recursos.
+        </p>
+
         <div class="img-wrapper">
-            <img src="img/maquete-geral.png" alt="Maquete do projeto" class="content-img">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+                 alt="Fazenda inteligente"
+                 class="content-img">
         </div>
     </section>
 
+    <!-- COMEDOURO -->
     <section id="comedouro">
         <h2>Comedouro Automatizado</h2>
-        <p>Nosso protótipo de comedouro evita desperdício de ração e garante a alimentação correta dos animais através de sensores de presença e peso.</p>
+        <p>
+            Sistema inteligente que controla a alimentação dos animais,
+            reduzindo desperdícios e melhorando a eficiência.
+        </p>
+
         <div class="img-wrapper">
-            <img src="img/comedouro.png" alt="Comedouro automatizado" class="content-img">
+            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1200&q=80"
+                 alt="Comedouro automatizado"
+                 class="content-img">
         </div>
+
         <div class="card-container">
+
             <div class="card">
                 <h3>Economia</h3>
                 <p>Redução de até 30% no desperdício de ração.</p>
             </div>
+
             <div class="card">
                 <h3>Saúde Animal</h3>
-                <p>Alimento fresco e menor risco de pragas.</p>
+                <p>Alimentação mais controlada e segura.</p>
             </div>
+
             <div class="card">
                 <h3>Sustentabilidade</h3>
-                <p>Menos resíduos e maior controle produtivo.</p>
+                <p>Menor impacto ambiental na produção rural.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SIMULADOR -->
+    <section id="simulador">
+        <h2>Simulador de Economia</h2>
+        <p>Descubra quanto você economiza com o sistema automatizado:</p>
+
+        <div class="simulador-box">
+            <label for="racao">Ração diária (kg):</label>
+            <input type="number" id="racao" placeholder="Ex: 50" min="0">
+
+            <button id="btn-calcular">Calcular</button>
+
+            <div id="resultado">
+                <p>⚡ Economia anual: <span id="res-kg">0</span> kg</p>
+                <p>🌱 Impacto: menos desperdício e mais eficiência</p>
             </div>
         </div>
     </section>
 
-    <section id="simulador">
-        <h2>Simulador de Economia</h2>
-        <p>Veja quanto você pode economizar de ração com a automação:</p>
-        <div class="simulador-box">
-            <label for="racao">Ração diária (kg):</label>
-            <input type="number" id="racao" min="0" placeholder="Ex: 50">
-            <button id="btn-calcular">Calcular Economia Anual</button>
-            <div id="resultado">
-                <p>⚡ <strong>Economia estimada:</strong> <span id="res-kg">0</span> kg/ano</p>
-                <p>🌱 <strong>Impacto ambiental:</strong> Menor pegada de carbono e mais eficiência!</p>
-            </div>
-        </div>
-    </section>
 </main>
 
 <footer>
-    <p>&copy; 2026 AgroTec Sustentável - Concurso Agrinho | Focado em tecnologia e sustentabilidade 🌍</p>
+    <p>© 2026 AgroTec Sustentável - Projeto Agrinho 🌱</p>
 </footer>
 
 <script src="script.js"></script>
