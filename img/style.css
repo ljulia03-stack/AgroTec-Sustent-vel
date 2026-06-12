@@ -1,100 +1,206 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Corpo */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+html{
+    scroll-behavior:smooth;
 }
 
-/* Header, nav e footer */
-header, nav, footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #f0f0f0;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#121212;
+    color:#f5f5f5;
+    line-height:1.7;
 }
 
-.logo {
-    width: 100px;
-    margin: 0 auto 10px;
-    display: block;
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0d1f14,#1f4d2f);
+    text-align:center;
+    padding:2rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.4);
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-nav a:hover {
-    color: #27ae60;
+header h1{
+    font-size:2.5rem;
+    color:#7CFC00;
 }
 
-/* Banner */
-.banner-img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+header p{
+    color:#d0d0d0;
 }
 
-/* Container */
-.container {
-    padding: 2em;
+.logo{
+    width:120px;
+    margin-bottom:15px;
 }
 
-/* Imagens centralizadas */
-.img-wrapper {
-    text-align: center;
-    margin: 1em 0;
-}
-.content-img {
-    width: 80%;
-    max-width: 600px;
+/* MENU */
+
+nav{
+    background:#1b1b1b;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-/* Cards */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-}
-.card {
-    background-color: #fafafa;
-    border: 1px solid #ccc;
-    padding: 1em;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+nav a{
+    color:#7CFC00;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
-/* Simulador */
-.simulador-box {
-    text-align: center;
-    margin-top: 1em;
-}
-#resultado {
-    display: none;
-    margin-top: 1em;
-    background: #e0ffe0;
-    padding: 1em;
-    border-radius: 5px;
+nav a:hover{
+    color:#ffffff;
 }
 
-/* Footer */
-footer {
-    margin-top: 2em;
+/* BANNER */
+
+.banner-img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    filter:brightness(70%);
+}
+
+/* CONTEÚDO */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+section h2{
+    color:#7CFC00;
+    margin-bottom:15px;
+    border-left:5px solid #7CFC00;
+    padding-left:10px;
+}
+
+/* IMAGENS */
+
+.img-wrapper{
+    text-align:center;
+    margin-top:20px;
+}
+
+.content-img{
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(124,252,0,.2);
+}
+
+/* CARDS */
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:#1f1f1f;
+    border:1px solid #2f6b3d;
+    width:280px;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(124,252,0,.25);
+}
+
+.card h3{
+    color:#7CFC00;
+    margin-bottom:10px;
+}
+
+/* SIMULADOR */
+
+.simulador-box{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+input{
+    padding:12px;
+    width:220px;
+    border:none;
+    border-radius:8px;
+    margin:10px;
+    background:#2b2b2b;
+    color:white;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2e8b57;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#3cb371;
+}
+
+#resultado{
+    margin-top:20px;
+    display:none;
+    background:#17311f;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d0d0d;
+    text-align:center;
+    padding:25px;
+    color:#999;
+    border-top:2px solid #2e8b57;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .banner-img{
+        height:250px;
+    }
+
+    .card{
+        width:100%;
+    }
+
 }
